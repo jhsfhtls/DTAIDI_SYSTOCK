@@ -1,6 +1,6 @@
-create database DTAIDI_SYSTOCK;
+CREATE DATABASE INVENTORY_SUPPLY_CHAIN;
 
-use database DDTAIDI_SYSTOCK;
+USE DATABASE INVENTORY_SUPPLY_CHAIN;
 
 --CRIAÇÃO DAS TABELAS 
 --venda
@@ -90,7 +90,7 @@ from
 where
 	EXTRACT(year from data_entrada) = 2025
 	AND EXTRACT(month from data_entrada) = 2	
-	(data_entrada is not null) and qtde_recebida is null
+	AND (data_entrada is not null) and qtde_recebida is null
 	
 	
 --Parte 2 – Transformações de Dados
